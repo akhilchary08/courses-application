@@ -1,0 +1,14 @@
+.course-list {
+  background-color: #f5f6fa;
+}
+
+.card {
+  width: 80% !important;
+}
+
+.add-course {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+  margin-bottom: 20px;
+}

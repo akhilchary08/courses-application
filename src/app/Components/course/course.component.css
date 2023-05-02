@@ -1,0 +1,9 @@
+.course-header {
+  display: flex !important;
+  justify-content: space-between;
+}
+
+.desc-btns {
+  display: flex;
+  justify-content: space-between;
+}

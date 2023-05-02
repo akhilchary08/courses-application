@@ -1,0 +1,24 @@
+<div class="content">
+  <div class="header course-header">
+    <p>Video course {{ courseData.title }}</p>
+    <div class="time-date meta">
+      <small
+        ><i class="clock outline icon"></i>{{ courseData.duration }}
+      </small>
+      <small
+        ><i class="calendar outline icon"></i
+        >{{ courseData.date | date : "dd/MM/YYYY" }}</small
+      >
+    </div>
+  </div>
+  <div class="description">
+    <div class="desc-btns">
+        <p>{{courseData.description}}</p>
+        <div class="edit-delete">
+            <button class="ui button primary"><i class="pencil alternate icon"></i> Edit</button>
+            <button class="ui button primary"><i class="trash alternate outline icon"></i> Delete</button>
+        </div>
+    </div>
+  </div>
+
+</div>
