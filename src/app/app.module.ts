@@ -9,19 +9,21 @@ import { CoursesListComponent } from './Components/courses-list/courses-list.com
 import { CourseComponent } from './Components/course/course.component';
 import { CreateCourseComponent } from './Components/create-course/create-course.component';
 import { CoursesService } from './Services/courses.service';
+import { DurationPipe } from './Pipes/duration.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     CoursesListComponent,
     CourseComponent,
-    CreateCourseComponent
+    CreateCourseComponent,
+    DurationPipe,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-  ],
-  providers: [CoursesService],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule,HttpClientModule],
+  providers: [CoursesService,CoursesListComponent],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

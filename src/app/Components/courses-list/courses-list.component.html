@@ -1,15 +1,18 @@
 <!-- <p>courses-list works!</p><i class="plus circle icon"></i> -->
 
-<div class="course-list">
+<div class="course-list-div">
   <div class="ui input">
       <input type="text"  placeholder="Search..." />
       <button class="ui button olive">Search</button>
   </div>
   <div class="add-course">
-    <button class="ui primary button"><i class="fa fa-thin fa-plus-circle " aria-hidden="true"></i>
+    <button class="ui primary button" routerLink="/addcourse"><i class="fa fa-thin fa-plus-circle " aria-hidden="true"></i>
         Add Course</button>
   </div>
-  <div *ngFor="let course of coursesData" class="ui cards">
-    <app-course [courseData]="course" class="card"></app-course>
+  <div class="course-list">
+    <div *ngFor="let course of coursesData" class="ui cards">
+      <app-course [courseData]="course" class="card"></app-course>
+    </div>
+
   </div>
 </div>

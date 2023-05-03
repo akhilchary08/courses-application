@@ -1,0 +1,17 @@
+.video-course {
+	color: #FFFFFF;
+	font-size: 22px;
+	font-family: "SourceSansPro-Bold";
+	text-align: left;
+	font-weight: 700;
+	text-transform: uppercase;
+	height: 23px;
+}
+
+.navbar{
+    background-color: #30323f;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}

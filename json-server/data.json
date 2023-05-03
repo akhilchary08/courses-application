@@ -1,0 +1,18 @@
+{
+  "courses": [
+    {
+      "id": "234567",
+      "title": "course1 ",
+      "description": "course1 desc",
+      "duration": 12,
+      "date": "12/12/2007"
+    },
+    {
+      "id": "456788",
+      "title": "course2 ",
+      "description": "course2 desc",
+      "duration": 52,
+      "date": "12/12/2003"
+    }
+  ]
+}

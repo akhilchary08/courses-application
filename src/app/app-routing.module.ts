@@ -5,13 +5,18 @@ import { CreateCourseComponent } from './Components/create-course/create-course.
 
 const routes: Routes = [
   {
-    path:'',
+    path:'courses',
     component:CoursesListComponent,
     pathMatch:'full'
   },
   {
     path:'addcourse',
     component:CreateCourseComponent,
+  },
+  {
+    path:'',
+    redirectTo:'courses',
+    pathMatch:'full'
   }
 ];
 
