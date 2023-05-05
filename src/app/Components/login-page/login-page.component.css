@@ -1,0 +1,26 @@
+.login-page {
+  background-color: #f5f6fa ;
+  height: 87%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-card{
+    
+    height: fit-content;
+    width: 400px;
+    padding: 20px 30px 30px 20px;
+}
+
+.forgot-submit{
+    display: flex;
+    justify-content: space-between;
+}
+.content{
+    padding-left: 0px!important;
+}
+.header{
+    font-size: 2rem!important;
+    font-weight: 300!important;
+
+}

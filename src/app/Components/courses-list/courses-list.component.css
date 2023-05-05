@@ -1,9 +1,14 @@
 .course-list-div {
   background-color: #f5f6fa;
+  padding: 20px;
+  /* display: grid; */
+  /* justify-content: center; */
+  height: 100%;
 }
 
 .card {
   width: 80% !important;
+  height: fit-content;
 }
 
 .add-course {
@@ -11,4 +16,23 @@
   justify-content: flex-end;
   width: 80%;
   margin-bottom: 20px;
+}
+.ui{
+  height: fit-content;
+}
+.cards{
+  margin-left: 10vw;
+}
+.add-course{
+  margin-left: 3vw;
+}
+.input{
+  width: fit-content;
+  justify-content: space-evenly;
+}
+.input{
+  margin-left: 11vw;
+}
+.input > input{
+  margin-right: 10px;
 }

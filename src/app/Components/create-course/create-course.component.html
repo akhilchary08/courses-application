@@ -1,23 +1,29 @@
-<p>create-course works!</p>
-<form class="ui form" [formGroup]="courseForm" (ngSubmit)="onSubmit()">
-    <div class="field">
-        <label>Title:</label>
-        <input type="text" placeholder="Title Input" formControlName="title">
+<div class="create-course-page">
+  <form class="ui form card" [formGroup]="courseForm" (ngSubmit)="onSubmit()">
+    <div class="content">
+        <div class="header">New Course</div>
     </div>
     <div class="field">
-        <label>Description:</label>
-        <textarea formControlName="description" cols="20" rows="5"></textarea>
+      <label>Title:</label>
+      <input type="text" placeholder="Title Input" formControlName="title" />
     </div>
     <div class="field">
-        <label>Duration:</label>
-        <input type="number" formControlName="duration" placeholder="minutes">
+      <label>Description:</label>
+      <textarea formControlName="description" cols="20" rows="5" placeholder="Add description"></textarea>
     </div>
     <div class="field">
-        <label>Date:</label>
-        <input type="date" formControlName="date" size="30" >
+      <label>Duration:</label>
+      <input type="number" formControlName="duration" placeholder="minutes" />
     </div>
-    <div>
-        <button class="ui button" type="reset" (click)="onCancel()">Cancel</button>
-        <button class="ui olive button" type="submit">Save</button>
+    <div class="field">
+      <label>Date:</label>
+      <input type="date" formControlName="date" size="30" />
     </div>
-</form>
+    <div class="submit-buttons">
+      <button class="ui button" type="reset" (click)="onCancel()">
+        Cancel
+      </button>
+      <button class="ui olive button" type="submit" [disabled]="!courseForm.valid">Save</button>
+    </div>
+  </form>
+</div>

@@ -17,8 +17,8 @@ export class CreateCourseComponent {
   courseForm = this.formBuilder.group({
     title: ['', Validators.required],
     description: ['', Validators.required],
-    duration: [0, Validators.required],
-    date: [0, Validators.required],
+    duration: ['', Validators.required],
+    date: [new Date(), Validators.required],
   });
 
   getCourseData() {

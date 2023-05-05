@@ -1,0 +1,26 @@
+.create-course-page{
+    background-color: #f5f6fa;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+.card{
+    width: 60%;
+    padding: 20px;
+    height: fit-content;
+    margin-top: 25px !important;
+}
+
+.content{
+    padding-left: 0px!important;
+}
+
+.submit-buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit-buttons > .ui.button.olive{
+    margin-left: 10px;
+}

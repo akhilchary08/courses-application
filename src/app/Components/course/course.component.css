@@ -1,9 +1,33 @@
 .course-header {
   display: flex !important;
   justify-content: space-between;
+  margin-top: 10px!important;
 }
-
+.course-header>p{
+  margin-left: 10px!important;
+}
 .desc-btns {
   display: flex;
   justify-content: space-between;
+}
+.ui.button.primary {
+  font-size: 12px;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 10px 15px;
+}
+
+.time-date > small {
+  margin-right: 10px !important;
+}
+
+.time-date > small > i {
+  margin-right: 4px !important;
+}
+
+.desc-btns > p {
+  width: 75%;
+  text-align: justify;
+  margin-left: 10px!important;
+  margin-top: 10px!important;
 }

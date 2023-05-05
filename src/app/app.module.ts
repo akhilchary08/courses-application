@@ -12,6 +12,7 @@ import { CoursesService } from './Services/courses.service';
 import { DurationPipe } from './Pipes/duration.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginPageComponent } from './Components/login-page/login-page.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     CourseComponent,
     CreateCourseComponent,
     DurationPipe,
+    LoginPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule,HttpClientModule],
   providers: [CoursesService,CoursesListComponent],
